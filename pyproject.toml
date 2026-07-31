@@ -1,0 +1,36 @@
+[project]
+name = "tdw-custom-house"
+version = "0.1.0"
+description = "Configurable first-person TDW floorplan capture project"
+readme = "tdw_custom_house/README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "numpy>=1.23,<3",
+    "pillow>=10.1,<12",
+    "requests>=2.31,<3",
+    "setuptools==80.9.0",
+    "tdw==1.13.0.0",
+]
+
+[project.scripts]
+tdw-house = "tdw_custom_house.interactive_house:main"
+tdw-house-capture = "tdw_custom_house.capture_top_view:main"
+tdw-house-annotate = "tdw_custom_house.draw_annotations:main"
+tdw-three-object-capture = "tdw_custom_house.three_object_capture:main"
+tdw-home-clutter-capture = "tdw_custom_house.three_object_capture:main"
+
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = []
+
+[tool.uv.sources]
+tdw = { path = "Python", editable = true }
+
+[tool.setuptools.packages.find]
+include = ["tdw_custom_house*"]
+
+[tool.setuptools.package-data]
+tdw_custom_house = ["furniture_config.json"]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "custom_table",
+    "model_name": "table_square",
+    "position": {"x": 1.5, "y": 0.0, "z": 2.0},
+    "rotation": {"x": 0.0, "y": 90.0, "z": 0.0},
+    "scale": 1.0,
+    "enabled": false,
+    "physics": {
+      "use_default_values": false,
+      "mass": 30.0,
+      "dynamic_friction": 0.4,
+      "static_friction": 0.5,
+      "bounciness": 0.0,
+      "kinematic": true,
+      "gravity": false
+    }
+  },
+  {
+    "name": "custom_chair",
+    "model_name": "wood_chair",
+    "position": {"x": 2.3, "y": 0.0, "z": 2.0},
+    "rotation": {"x": 0.0, "y": 270.0, "z": 0.0},
+    "enabled": false
+  }
+]

@@ -11,3 +11,10 @@ Python/example_controllers/point_cloud.txt
 Python/tdw/binaries/Windows/vhacd/log.txt
 Python/tdw/binaries/Darwin/vhacd/log.txt
 Python/tdw/binaries/Linux/vhacd/log.txt
+.venv/
+*.egg-info/
+tdw_download/
+error.log
+output/*
+!output/.gitkeep
+tdw_custom_house/output/
